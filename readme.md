@@ -9,3 +9,5 @@ to install:
 nix-env -i -f default.nix
 Now can run the exe which was named in CMakeLists.txt file: hello-cmake-world
 
+https://discourse.nixos.org/t/using-native-libraries/2559
+-maybe this is how I need to install and use this library.
