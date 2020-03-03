@@ -1,0 +1,7 @@
+# set minimum cmake version
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+
+# project name and language
+project(supplyHaskellFFIWithCMake LANGUAGES C)
+
+add_executable(supplyHaskellFFIWithCMake-0.0.2 hello-world.c)
