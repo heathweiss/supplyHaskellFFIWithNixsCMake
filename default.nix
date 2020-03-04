@@ -9,10 +9,13 @@ stdenv.mkDerivation rec {
   
 
   installPhase = ''
+  
     mkdir -p $out/bin;
     cp hello-cmake-world $out/bin/;
-    #cp $src/src/Message.h $out/bin/;
-    mkdir -p $out/lib
-    cp libmessage.so $out/lib/;
+    install -D libmessage.so $out/lib/libmessage.so
+    #mkdir -p $out/lib
+    mkdir $out/include
+    cp libmessage.so $out/include
+    #cp -r $src/include/* $out/include
   '';
 }
