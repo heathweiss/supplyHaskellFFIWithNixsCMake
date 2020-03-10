@@ -12,4 +12,4 @@ add_library(message
   )
 
 # this is the exe file: nix-shell$ hello-world
-add_executable(hello-cmake-world src/hello-world.c)
+add_executable(supplyHaskellFFIWithCMake src/hello-world.c)
